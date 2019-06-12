@@ -1,17 +1,17 @@
 # templar
 
-the code in this branch needs `sbt` to run
-on MacOs `brew install sbt`
-then in project root run `sbt`
-at the sbt console, run `run`
-it will download a lot of related jar dependencies
-into the local `~/.ivy2/cache`
-and eventually run the server
-at `localhost:8080/render`
+the code in this branch needs `sbt` to run  
+on MacOs `brew install sbt`  
+then in project root run `sbt`  
+at the sbt console, run `run`  
+it will download a lot of related jar dependencies  
+into the local `~/.ivy2/cache`  
+and eventually run the server  
+at `localhost:8080/render`  
 
-post a json to this endpoint
-get the corresponding html back
-eg via postman, POST to `localhost:8080/render`
+post a json to this endpoint  
+get the corresponding html back  
+eg via postman, POST to `localhost:8080/render`  
 ```json
 {
 	"bindings":[
