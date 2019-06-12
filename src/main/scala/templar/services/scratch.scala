@@ -1,3 +1,4 @@
+/*
 package templar.services
 
 import scalatags.Text.all._
@@ -17,7 +18,7 @@ object scratch {
 
 }
 
-/*
+
 val x: scalatags.Text.TypedTag[String] = html(
       head(
         script("some script")

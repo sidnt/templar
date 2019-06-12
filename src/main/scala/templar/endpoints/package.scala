@@ -17,7 +17,7 @@ package object endpoints {
   /** there's a dbquery endpoint */
   val dbqueryEndpoint: Endpoint[FlatEntity, String, HtmlString, Nothing] = endpoint
     .post
-    .in("dbquery")
+    .in("render")
     .in(jsonBody[FlatEntity])
     .out(stringBody)
     .errorOut(stringBody)
