@@ -7,10 +7,18 @@ ThisBuild / organizationName := "example"
 
 lazy val root = (project in file("."))
   .settings(
-    name := ".",
+    name := "templar",
     libraryDependencies ++= Seq(
       scalaTest % Test,
       zio,
-      scalatags
+      scalatags,
+      tapir,
+      tapirJsonCirce,
+      tapirHttp4sServer,
+      tapirAkkaHttpServer,
+      zioInteropCats
     )
+  )
+  .settings(
+    scalacOptions += "-Ypartial-unification"
   )
